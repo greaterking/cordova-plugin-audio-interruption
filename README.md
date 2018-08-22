@@ -10,6 +10,8 @@ this plugin will be useful if you want to resume audio in your application after
 $ cordova plugin add cordova-plugin-audio-interruption
 ```
 
+## Though AudioInterruption is globla ...must call onDeviceReady()
+
 ## Quick Example
 ```javascript
 let playingWasInterrupted = false;
