@@ -15,8 +15,6 @@
         <engine name="cordova" version=">=3.4.0"/>
     </engines>
 
-    <asset src="www/AudioInterruption.js" target="js/AudioInterruption.js"/>
-
     <js-module src="www/AudioInterruption.js" name="AudioInterruption">
         <clobbers target="AudioInterruption" />
     </js-module>
