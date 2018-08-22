@@ -1,8 +1,10 @@
-/*global cordova, module*/
+var cordova = require('cordova'),
+    exec = require('cordova/exec');
+
 var AudioInterruption = {
   addListener: function(successCallback, errorCallback) {
     var errorCallback = errorCallback || function() {};
-    cordova.exec(successCallback, errorCallback, 'AudioInterruption', 'addListener', []);
+    exec(successCallback, errorCallback, "AudioInterruption", "addListener", []);
   }
 };
 
