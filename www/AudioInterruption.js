@@ -1,10 +1,9 @@
 /*global cordova, module*/
 
-var AudioInterruption = {
+module.exports = {
   addListener: function(successCallback, errorCallback) {
     var errorCallback = errorCallback || function() {};
     cordova.exec(successCallback, errorCallback, 'AudioInterruption', 'addListener');
   }
 };
-
-module.exports = AudioInterruption;
+  
